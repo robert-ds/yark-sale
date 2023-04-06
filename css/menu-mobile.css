@@ -1,0 +1,59 @@
+:root {
+  --black:#000000;
+  --white: #FFFFFF;
+  --very-light-pink: #C7C7C7;
+  --text-input-field: #F7F7F7;
+  --dark: #232830;
+  --hospital-green: #ACD9B2;
+  --sm: 1.4rem;
+  --md: 1.6rem;
+  --lg: 1.8rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.mobile-menu {
+  padding: 2.4rem;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+}
+
+.mobile-menu ul {
+  padding: 0;
+  margin: 2.4rem 0 0;
+  list-style: none;
+}
+
+.mobile-menu ul:nth-child(1) {
+  border-bottom: .1rem solid var(--very-light-pink);
+}
+
+.mobile-menu ul li {
+  margin-bottom: 2.4rem;
+}
+
+.email {
+  font-size: var(--sm);
+  font-weight: 300 !important;
+}
+
+.sign-out {
+  font-size: var(--sm);
+  color: var(--hospital-green) !important;
+}
