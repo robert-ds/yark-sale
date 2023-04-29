@@ -105,7 +105,7 @@ nav {
   transform: rotate(90deg);
 }
 
-/* Menu Desktop Desplegable*/
+/* Dropdowm desktop menu */
 .desktop-menu {
   position: absolute;
   display: none;
@@ -121,7 +121,7 @@ nav {
   font-size: 1.2rem;
 }
 
-/* Show and hide menu */
+/* Show and hide menu desktop */
 .inactive-menu {
   display: unset;
 }
@@ -158,6 +158,11 @@ nav {
   display: inline-block;
 }
 
+ /* Drop-down menu mobile */
+.mobile-menu {
+  display: none;
+}
+
 /* Media Querie Mobile */
 @media screen and (max-width: 640px){
 
@@ -172,5 +177,53 @@ nav {
 
   .navbar-email {
     display: none;
+  }
+
+ /* Drop-down menu Desktop */
+  .desktop-menu {
+    display: none;
+  }
+
+  /* Drop-down menu mobile */
+  .mobile-menu {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    padding: 2.4rem;
+  }
+  
+  .mobile-menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+  }
+  
+  .mobile-menu ul {
+    padding: 0;
+    margin: 2.4rem 0 0;
+    list-style: none;
+  }
+  
+  .mobile-menu ul:nth-child(1) {
+    border-bottom: .1rem solid var(--very-light-pink);
+  }
+  
+  .mobile-menu ul li {
+    margin-bottom: 2.4rem;
+  }
+  
+  .email {
+    font-size: var(--sm);
+    font-weight: 300 !important;
+  }
+  
+  .sign-out {
+    font-size: var(--sm);
+    color: var(--hospital-green) !important;
+  }
+
+  /* Show and hide menu mobile*/
+  .inactive-menu-mobile {
+    display: unset;
   }
 }
